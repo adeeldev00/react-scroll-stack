@@ -1,4 +1,4 @@
-import { ScrollStack } from "react-scroll-stack";
+import { ScrollStack } from "./ScrollStack";
 
 const cards = [
   {
