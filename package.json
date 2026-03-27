@@ -1,0 +1,33 @@
+{
+  "name": "react-scroll-stack",
+  "version": "1.0.0",
+  "description": "A sticky scroll-stack animation where each card slides over the previous one as you scroll.",
+  "keywords": ["react", "animation", "scroll", "sticky", "stack", "cards"],
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsup src/index.tsx --format cjs,esm --dts --external react",
+    "dev": "tsup src/index.tsx --format cjs,esm --dts --watch --external react"
+  },
+  "peerDependencies": {
+    "react": ">=17",
+    "react-dom": ">=17"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "tsup": "^8.5.1",
+    "typescript": "^6.0.2"
+  },
+  "files": ["dist"],
+  "license": "MIT"
+}
